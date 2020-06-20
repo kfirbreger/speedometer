@@ -46,7 +46,7 @@ class LocationManager: NSObject, ObservableObject {
 
     var speedString: String {
         guard let speed = currentSpeed else {
-            return "-1"
+            return "0"
         }
         return String(format:"%.2f", speed * 3.6)
     }
@@ -64,13 +64,13 @@ extension LocationManager: CLLocationManagerDelegate {
 
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         self.locationStatus = status
-        print(#function, statusString)
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else { return }
         self.currentLocation = location
         self.currentSpeed = location.speed
+        // For debugging
         print(#function, location)
     }
 

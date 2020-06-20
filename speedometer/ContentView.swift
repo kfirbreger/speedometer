@@ -16,7 +16,7 @@ struct ContentView: View {
             Color.black
                 .edgesIgnoringSafeArea(.all)
             Text("\(locationManager.speedString)")
-                .font(.largeTitle)
+                .font(.system(size: 72))
                 .fontWeight(.thin)
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.white)
