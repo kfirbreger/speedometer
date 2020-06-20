@@ -9,13 +9,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var locationManager = LocationManager()
+    
     var body: some View {
-        Text("Hello, World!")
+        ZStack{
+            Color.black
+                .edgesIgnoringSafeArea(.all)
+            Text("\(locationManager.speedString)")
+                .font(.largeTitle)
+                .fontWeight(.thin)
+                .multilineTextAlignment(.center)
+                .foregroundColor(Color.white)
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+        
     }
 }

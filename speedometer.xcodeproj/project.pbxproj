@@ -15,6 +15,7 @@
 		024F22F5249CFA3600897E31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024F22F3249CFA3600897E31 /* LaunchScreen.storyboard */; };
 		024F2300249CFA3600897E31 /* speedometerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024F22FF249CFA3600897E31 /* speedometerTests.swift */; };
 		024F230B249CFA3600897E31 /* speedometerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024F230A249CFA3600897E31 /* speedometerUITests.swift */; };
+		024F2319249CFBAC00897E31 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024F2318249CFBAC00897E31 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		024F2306249CFA3600897E31 /* speedometerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = speedometerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		024F230A249CFA3600897E31 /* speedometerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = speedometerUITests.swift; sourceTree = "<group>"; };
 		024F230C249CFA3600897E31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		024F2318249CFBAC00897E31 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				024F22E8249CFA3300897E31 /* AppDelegate.swift */,
 				024F22EA249CFA3300897E31 /* SceneDelegate.swift */,
 				024F22EC249CFA3300897E31 /* ContentView.swift */,
+				024F2318249CFBAC00897E31 /* LocationManager.swift */,
 				024F22EE249CFA3600897E31 /* Assets.xcassets */,
 				024F22F3249CFA3600897E31 /* LaunchScreen.storyboard */,
 				024F22F6249CFA3600897E31 /* Info.plist */,
@@ -268,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				024F22E9249CFA3300897E31 /* AppDelegate.swift in Sources */,
+				024F2319249CFBAC00897E31 /* LocationManager.swift in Sources */,
 				024F22EB249CFA3300897E31 /* SceneDelegate.swift in Sources */,
 				024F22ED249CFA3300897E31 /* ContentView.swift in Sources */,
 			);
