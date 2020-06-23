@@ -68,6 +68,10 @@ extension LocationManager: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else { return }
+        // If location accuracy is < 0 the speed is invalid: https://developer.apple.com/documentation/corelocation/cllocation/3524340-speedaccuracy
+        if location.speedAccuracy < 0 {
+            return
+        }
         self.currentLocation = location
         self.currentSpeed = location.speed
         // For debugging
